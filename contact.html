@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Outreach</title>
+  <link rel="stylesheet" href="stylesFinal.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-bar">
+      <div class="container">
+        <div class="logo">Campus Outreach</div>
+      </div>
+    </div>
+
+    <div class="nav-bar-wrapper">
+      <nav class="nav-bar" id="main-nav">
+        <a href="finalIndex.html" class="nav-link">Home</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="contact.html" class="nav-link current">Contact</a>
+        <a href="mission.html" class="nav-link">Mission</a>
+        <a href="people.html" class="nav-link">People</a>
+        <a href="prayer.html" class="nav-link">Prayer Requests</a>
+      </nav>
+    </div>
+  </header>
+    <main>
+      <section id="contact" class="section active"> 
+        <h2 class="section-title">Contact & Connection</h2>
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold mb-4">Schedule a meeting</h3>
+          
+          <form class="form-grid" action="mailto:contact@campusoutreach.org" method="POST" enctype="text/plain">
+
+            <div class="form-input-group">
+              <label for="name">NAME INPUT</label>
+              <input type="text" id="name" name="Name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-input-group">
+              <label for="phone">PHONE NUMBER INPUT</label>
+              <input type="tel" id="phone" name="Phone Number" placeholder="555-555-5555" required>
+            </div>
+
+            <div class="form-input-group">
+              <label for="meeting_day">MEETING DAY</label>
+              <select id="meeting_day" name="Meeting Day">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+              </select>
+            </div>
+
+            <div class="form-input-group">
+              <label for="with_who">WITH WHO?</label>
+              <select id="with_who" name="Staff Member">
+                <option>Any Available Staff</option>
+                <option>Isaac Kain - OSU</option>
+                <option>Logan Carpenter - Director</option>
+                <option>Austin Sprong - UC</option>
+              </select>
+            </div>
+
+            <div class="submit-button-group">
+              <button type="submit" aria-label="Submit Contact Info">
+                SUBMIT CONTACT<br>INFO
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <h3 class="text-2xl font-semibold mb-4 mt-8">Other Ways to get connected...</h3>
+        <div class="connect-grid mb-12">
+          <div class="connect-placeholder"></div>
+          <div class="connect-placeholder"></div>
+          <div class="connect-placeholder"></div>
+          <div class="connect-placeholder"></div>
+          <div class="connect-placeholder"></div>
+        </div>
+
+        <h3 class="groupme-title">Group Me Sign Up</h3>
+
+        <form class="form-grid" action="mailto:groupme@campusoutreach.org" method="POST" enctype="text/plain">
+          
+          <div class="form-input-group">
+            <label for="gm_name">NAME INPUT</label>
+            <input type="text" id="gm_name" name="GroupMe Name" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-input-group">
+            <label for="gm_phone">PHONE NUMBER INPUT</label>
+            <input type="tel" id="gm_phone" name="GroupMe Phone" placeholder="555-555-5555" required>
+          </div>
+
+          <div class="form-input-group">
+            <label for="gm_email">EMAIL INPUT</label>
+            <input type="email" id="gm_email" name="GroupMe Email" placeholder="you@campus.edu" required>
+          </div>
+          <div class="submit-button-group">
+            <button type="submit" aria-label="Submit Group Me Sign Up">
+              SUBMIT CONTACT<br>INFO
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

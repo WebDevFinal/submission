@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Outreach</title>
+    <link rel="stylesheet" href="stylesFinal.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-bar">
+            <div class="container">
+                <div class="logo">Campus Outreach</div>
+            </div>
+        </div>
+
+        <div class="nav-bar-wrapper">
+            <nav class="nav-bar" id="main-nav">
+                <a href="finalIndex.html" class="nav-link">Home</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="mission.html" class="nav-link">Mission</a>
+                <a href="people.html" class="nav-link">People</a>
+                <a href="prayer.html" class="nav-link current">Prayer Requests</a>
+            </nav>
+        </div>
+    </header>   
+        <main>
+            <section id="prayer" class="section active">
+                <h2 class="section-title">Submit a Prayer Request</h2>
+                <div class="max-w-xl mx-auto p-6 border rounded-lg shadow-lg bg-red-50">
+                    <p class="mb-4 text-gray-700 text-center">
+                        We believe in the power of prayer. Share your requests with our staff team, and we will commit to praying for you.
+                    </p>
+                    <form action="mailto:prayer@campusoutreach.org" method="POST" enctype="text/plain" class="space-y-4">
+                        <div class="form-group">
+                            <label for="prayer_name" class="block text-sm font-medium text-gray-700">Your Name (Optional)</label>
+                            <input type="text" id="prayer_name" name="Name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="prayer_request" class="block text-sm font-medium text-gray-700">Prayer Request</label>
+                            <textarea id="prayer_request" name="Request" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-2 px-4 rounded-md text-white font-bold transition duration-150" style="background-color: var(--co-accent);">
+                            Submit Prayer Request
+                        </button>
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+
+
+    <footer class="text-center py-4 text-sm mt-8" style="background-color: var(--co-primary); color: white;">
+        &copy; 2025 Campus Outreach. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
